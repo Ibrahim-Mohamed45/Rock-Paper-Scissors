@@ -10,3 +10,12 @@ const finalWinner = document.querySelector('.finalWinner');
 const rockButton = document.querySelector('.rockButton');
 const paperButton = document.querySelector('.paperButton');
 const scissorsButton = document.querySelector('.scissorsButton');
+
+let player;
+let computer;
+let result; 
+
+// Reloads the page when the play again button is pressed.
+playAgainButton.addEventListener('click', () => {
+    location.reload();
+})
