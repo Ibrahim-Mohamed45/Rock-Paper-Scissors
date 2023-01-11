@@ -20,6 +20,9 @@ playAgainButton.addEventListener('click', () => {
     location.reload();
 })
 
+// Player choice
+player = button.textContent;
+
 // Computer Choice
 function getComputerChoice(){
     // Random number between 1 to 3.
@@ -33,4 +36,5 @@ function getComputerChoice(){
     if (randomNum == 3){
         computer = 'Scissors';
     }
- }    
+}
+
