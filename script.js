@@ -57,4 +57,8 @@ function compareChoices(){
     } 
 }      
 
+// Increases either player or computer score depending on the outcome.
+function incrementScore(scoreSpan){
+    scoreSpan.innerText = parseInt(scoreSpan.innerText) + 1
+}
 
