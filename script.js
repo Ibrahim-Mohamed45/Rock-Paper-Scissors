@@ -20,8 +20,31 @@ playAgainButton.addEventListener('click', () => {
     location.reload();
 })
 
-// Player choice
-player = button.textContent;
+selectionButtons.forEach(button => button.addEventListener('click', function buttonF() { 
+    // Player choice
+    player = button.textContent;
+    getComputerChoice();
+    playerChoice.textContent = `Player Choice: ${player}`;
+    computerChoice.textContent = `Computer Choice: ${computer}`;
+    resultsText.textContent = `Result: ${compareChoices()}`;
+    if (resultsText.textContent == 'Result: Player wins!'){
+        incrementScore(playerScoreSpan);
+    }
+    if (resultsText.textContent == 'Result: Computer wins!'){
+        incrementScore(computerScoreSpan);
+    }
+    if (playerScoreSpan.textContent == 5){
+        finalWinner.textContent = 'The player has won this battle';
+    }
+    if (computerScoreSpan.textContent == 5){
+        finalWinner.textContent = 'The computer has won this battle';
+    }
+    if (computerScoreSpan.textContent == 5 || playerScoreSpan.textContent == 5){
+        rockButton.setAttribute('disabled', 'disabled');
+        paperButton.setAttribute('disabled', 'disabled');
+        scissorsButton.setAttribute('disabled', 'disabled');
+    }
+}))
 
 // Computer Choice
 function getComputerChoice(){
