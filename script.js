@@ -19,3 +19,18 @@ let result;
 playAgainButton.addEventListener('click', () => {
     location.reload();
 })
+
+// Computer Choice
+function getComputerChoice(){
+    // Random number between 1 to 3.
+    let randomNum = Math.floor(Math.random() * 3) + 1;
+    if (randomNum == 1){
+        computer = 'Rock';
+    }
+    if (randomNum == 2){
+        computer = 'Paper';
+    }
+    if (randomNum == 3){
+        computer = 'Scissors';
+    }
+ }    
