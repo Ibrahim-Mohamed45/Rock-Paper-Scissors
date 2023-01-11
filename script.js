@@ -38,3 +38,23 @@ function getComputerChoice(){
     }
 }
 
+// All possible choices and thier respective outcomes.
+function compareChoices(){
+    if (player == computer){
+        return 'Tie!';
+    }
+    else if ((player === 'Rock' && computer === 'Scissors') ||
+            (player === 'Scissors' && computer === 'Paper') ||
+            (player === 'Paper' && computer === 'Rock')) {
+            
+        return 'Player wins!';
+    }
+    else if ((computer === 'Rock' && player === 'Scissors') ||
+            (computer === 'Scissors' && player === 'Paper') ||
+            (computer === 'Paper' && player === 'Rock')) {
+
+        return 'Computer wins!';
+    } 
+}      
+
+
