@@ -16,9 +16,7 @@ let computer;
 let result; 
 
 // Reloads the page when the play again button is pressed.
-playAgainButton.addEventListener('click', () => {
-    location.reload();
-})
+playAgainButton.addEventListener('click', () => location.reload());
 
 selectionButtons.forEach(button => button.addEventListener('click', function buttonF() { 
     // Player choice
@@ -34,10 +32,10 @@ selectionButtons.forEach(button => button.addEventListener('click', function but
         incrementScore(computerScoreSpan);
     }
     if (playerScoreSpan.textContent == 5){
-        finalWinner.textContent = 'The player has won this battle';
+        finalWinner.textContent = "Congratulations you WON !!! Press play again if you'd like to play again.";
     }
     if (computerScoreSpan.textContent == 5){
-        finalWinner.textContent = 'The computer has won this battle';
+        finalWinner.textContent = "Unfortunately you LOST !!! Press play again if you'd like to play again.";
     }
     if (computerScoreSpan.textContent == 5 || playerScoreSpan.textContent == 5){
         rockButton.setAttribute('disabled', 'disabled');
