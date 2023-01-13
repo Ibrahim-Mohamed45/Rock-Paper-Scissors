@@ -11,9 +11,17 @@
 <h1 class="font-semibold text-2xl text-center py-5 md:text-5xl md:py-7">Rock Paper Scissors Game</h1>
 <h2 class="font-medium text-xl text-center pb-10 md:text-2xl">First to score 5 points wins the game</h2>
 <div class="buttons">
-    <button class="selectionButton rockButton"><p class = "buttonText">Rock</p></button>
-    <button class="selectionButton paperButton"><p class = "buttonText">Paper</p></button>
-    <button class="selectionButton scissorsButton"><p class = "buttonText">Scissors</p></button>
+    <div class="flex justify-center gap-10 md:gap-0 md:justify-around text-white">
+        <div class="bg-gradient-to-b from-blue-700 rounded-full w-40 h-40 md:w-56 md:h-56 lg:w-72 lg:h-72 border-solid border-2 border-black flex content-evenly">
+            <button class="selectionButton rockButton mx-auto"><p class = "buttonText md:pt-3 font-medium text-xl">Rock</p><img src="../images/rock.png" class="object-scale-down w-20 h-20 pt-2 md:px-5 md:pt-0 md:object-scale-down md:h-40 md:w-40 lg:object-scale-down lg:h-60 lg:w-60 lg:pb-5"></button>
+        </div>
+        <div class="bg-gradient-to-b from-blue-700 rounded-full w-40 h-40 md:w-56 md:h-56 lg:w-72 lg:h-72 border-solid border-2 border-black flex content-evenly">
+            <button class="selectionButton paperButton mx-auto"><p class = "buttonText pt-3 font-medium text-xl">Paper</p><img src="../images/paper.png" class="md:px-5 md:object-scale-down md:h-40 w-40 lg:object-scale-down lg:h-60 lg:w-60 lg:pb-5"></button>
+        </div>
+        <div class="bg-gradient-to-b from-blue-700 rounded-full w-40 h-40 md:w-56 md:h-56 lg:w-72 lg:h-72 border-solid border-2 border-black flex content-evenly">   
+            <button class="selectionButton scissorsButton mx-auto"><p class = "buttonText pt-3 font-medium text-xl">Scissors<img src="../images/scissors.png" class="md:px-5 md:object-scale-down md:h-40 w-40 lg:object-scale-down lg:h-60 lg:w-60 lg:pb-5"></p></button>
+        </div> 
+    </div>
     <button class="playAgain"><p class = "buttonText">Play Again?</p></button>
 </div>
 
