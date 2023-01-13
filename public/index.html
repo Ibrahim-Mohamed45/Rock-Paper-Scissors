@@ -23,18 +23,20 @@
         </div> 
     </div>
     <div class="flex justify-center py-5"> 
-        <button class="playAgain bg-violet-500 hover:bg-violet-600 focus:outline-none focus:ring focus:ring-violet-300 active:bg-violet-700 px-5 py-3 text-xl leading-5 rounded-full font-semibold text-white"><p class = "buttonText">Play Again</p></button>
+        <button class="playAgain bg-blue-500 hover:bg-blue-700 text-white font-bold text-xl py-2 px-4 rounded"><p class = "buttonText">Play Again</p></button>
     </div>
 </div>
 
 <div class="scores">
-    <div>
+    <div class="flex justify-around font-medium text-2xl pt-2 gap-5 text-center">
         <p class="playerChoice">Player Choice: </p>
-        <p class="computerChoice">Computer Choice: </p>
         <p class="resultsText">Result: </p>
+        <p class="computerChoice">Computer Choice: </p>
+    </div>
+    <div class="flex justify-around font-medium text-2xl py-7 gap-5 text-center">
         <p class="playerScore">Player Score: <span data-player-score>0</span> </p>
-        <p class="computerScore">Computer Score: <span data-computer-score>0</span></p>
         <p class="finalWinner"></p>
+        <p class="computerScore">Computer Score: <span data-computer-score>0</span></p>
     </div>
 </div>    
 <script src="../script.js"></script>
