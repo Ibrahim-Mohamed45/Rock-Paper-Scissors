@@ -735,4 +735,9 @@ video {
   .lg\:pb-5 {
     padding-bottom: 1.25rem;
   }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
